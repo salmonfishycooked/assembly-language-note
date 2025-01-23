@@ -16,6 +16,10 @@ start:
     mov ax, data
     mov ds, ax
     mov si, 0
+
+    mov ax, stack
+    mov ss, ax
+    mov sp, 16
     call showStr
 
     mov ax, 4c00h
