@@ -1,4 +1,7 @@
 ; int 7ch install program
+
+; arguments: (dh) = line number, (dl) = column number, (cl) = color
+; ds:si points to the string that needs to be printed
 assume cs:code
 
 code segment
